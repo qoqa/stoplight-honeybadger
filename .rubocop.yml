@@ -1,0 +1,21 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-rake
+  - rubocop-thread_safety
+
+AllCops:
+  TargetRubyVersion: 3.3.3
+  NewCops: enable
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/BlockLength:
+  Max: 50
+
+RSpec/ExampleLength:
+  Max: 10
+
+RSpec/MultipleExpectations:
+  Max: 2
